@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Il mio Portfolio - Progetti</title>
+    <link rel="icon" type="image/x-icon" href="../Immagini/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+      main {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.75s ease-out forwards;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="intestazione">
+      <div class="contenitore-header">
+        
+        <div class="box-logo">
+          <img src="../Immagini/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="menu">
+          <ul class="lista-menu">
+            <li><a href="../../index.html" class="link-menu">Home</a></li>
+            <li><a href="../pagine/progetti.html" class="link-menu attivo">Progetti</a></li>
+            <li><a href="../pagine/about.html" class="link-menu">About</a></li>
+            <li><a href="../pagine/cv.html" class="link-menu">CV</a></li>
+            <li><a href="../pagine/contattami.html" class="link-menu">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    
+    <main class="sezione-progetti">
+      <!-- BARRA SINISTRA -->
+      <aside class="barra-sinistra">
+        <div class="contenitore-laterale">
+          <div class="profilo-laterale">
+            <img src="../Immagini/foto.png" alt="Profilo" class="foto-laterale">
+            <h2>Antonio De Siena</h2>
+            <p class="ruolo-laterale">Web Developer</p>
+            <button class="toggle-menu" aria-label="Apri menu">&#9662;</button> <!-- freccia ↓ -->
+          </div>
+        
+          <nav class="menu-laterale">
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../pagine/progetti.html" class="attivo">Progetti</a></li>
+              <li><a href="../pagine/about.html">About</a></li>
+              <li><a href="../pagine/contattami.html">Contatti</a></li>
+              <li><a href="../pagine/cv.html">CV</a></li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- CONTENUTO CENTRALE -->
+      <section class="contenitore-progetti">
+        <div class="contenitore-titolo-progetti">
+          <div class="titolo-linea linea-sinistra"><p>a</p></div>
+          <h1 class="titolo-progetti">Progetti</h1>
+          <div class="titolo-linea linea-destra"><p>a</p></div>
+        </div>
+
+        <div class="carosello-wrapper">
+          <!-- FRECCE -->
+          <button class="freccia freccia-sx"><p class="sin">❮</p></button>
+          <div class="carosello-progetti" id="caroselloProgetti"></div>
+          <button class="freccia freccia-dx"><p class="des">❯</p></button>
+        </div>
+
+        <div class="cta-progetti">
+          <a href="" class="bottone-chiaro bottone-cta"><img src="../Immagini/github.png" style="height: 30px;">Vedi il mio Github</a>
+        </div>
+      </section>
+
+      <!-- BARRA DESTRA -->
+      <aside class="barra-destra">
+        <div class="contenitore-barra-destra">
+          <h3>Ultimi aggiornamenti</h3>
+          <ul>
+            <li>Portfolio v2 in lavorazione</li>
+            <li>Nuove animazioni JS</li>
+            <li>Studio di React e GSAP</li>
+          </ul>
+        </div>  
+      </aside>
+    </main>
+
+    <script>
+      
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggleBtn = document.querySelector(".toggle-menu");
+          const menu = document.querySelector(".menu-laterale");
+
+          toggleBtn.addEventListener("click", () => {
+            menu.classList.toggle("aperto");
+            toggleBtn.classList.toggle("attivo");
+          });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+        const carosello = document.getElementById("caroselloProgetti");
+        const frecciaDx = document.querySelector(".freccia-dx");
+        const frecciaSx = document.querySelector(".freccia-sx");
+      
+        const progetti = [
+          { titolo: "Progetto introduzione", descrizione: "Pagina Eco-Hotel Pomelia", img: "../Immagini/progetto2.png", link: "https://antoniods1.github.io/html-primo-progetto/" },
+          { titolo: "Portfolio personale", descrizione: "Progetto con più pagine: Home, About, CV, Progetti e Contatti", img: "../Immagini/progetto1.png", link: "../../index.html" },
+          { titolo: "Pagina Download Report A2A", descrizione: "Progetto di un altro corso, pagina con pulsanti di download funzionanti", img: "../Immagini/progetto3.png", link: "https://antoniods1.github.io/html-projectwork/" },
+          { titolo: "To-do List", descrizione: "Lista di cose da fare interattiva per esercitarsi con la manipolazione del DOM.", img: "../Immagini/to-do list.png", link: "" },
+          { titolo: "Counter JavaScript", descrizione: "Progetto realizzato interamente in JavaScript; counter con elementi caricati dinamicamente", img: "../Immagini/counter.png", link: "" },
+          { titolo: "Orologio in Javascript", descrizione: "Orologio funzionante in tempo reale", img: "../Immagini/orologioJS.png", link: "" }
+        ];
+      
+        let currentIndex = 0;
+        const cardsPerView = 3;
+      
+        // Ottieni le 3 card “visibili”
+        function getCurrentSet() {
+          const set = [];
+          for (let i = 0; i < cardsPerView; i++) {
+            set.push(progetti[(currentIndex + i) % progetti.length]);
+          }
+          return set;
+        }
+      
+        // Render card nel DOM
+        function renderCards(data) {
+          carosello.innerHTML = "";
+          data.forEach((p, i) => {
+            const card = document.createElement("div");
+            card.className = "card-progetto";
+            card.style.zIndex = 10 - i;
+            card.innerHTML = `
+              <div class="contenitore-tutta-carta">
+                <div class="contenitore-carta">
+                  <img src="${p.img}" alt="${p.titolo}">
+                  <h3>${p.titolo}</h3>
+                  <p>${p.descrizione}</p>
+                </div>
+                <div class="contenitore-bottone-carta">
+                  <a href="${p.link}" class="bottone-chiaro bottone-della-card" target="_blank">View on GitHub</a>
+                </div>
+              </div>`;
+            carosello.appendChild(card);
+          });
+        }
+      
+        renderCards(getCurrentSet());
+      
+        // --- Animazione shuffle tipo carosello ---
+        async function shuffleAnimation(direction) {
+          const cards = document.querySelectorAll(".card-progetto");
+          if (!cards.length) return;
+      
+          // Fase 1: si compattano al centro
+          cards.forEach((card, i) => {
+            card.style.transition = "transform 0.4s ease, opacity 0.4s ease";
+            const offset = (i - 1) * 80;
+            card.style.transform = `translateX(${-offset / 2}px) scale(0.95) rotate(${(i - 1) * 3}deg)`;
+          });
+          await new Promise(r => setTimeout(r, 400));
+      
+          // Fase 2: fade out + movimento
+          cards.forEach((card, i) => {
+            card.style.transition = "transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.6s ease";
+            const dirX = direction === "next" ? -150 + i * 30 : 150 - i * 30;
+            const rot = (direction === "next" ? 10 : -10) + i * 3;
+            card.style.transform = `translate(${dirX}px, -${20 + i * 5}px) rotate(${rot}deg) scale(0.9)`;
+            card.style.opacity = "0";
+          });
+          await new Promise(r => setTimeout(r, 600));
+      
+          // Fase 3: aggiorna la sequenza tipo carosello (shift di 1)
+          if (direction === "next") {
+            currentIndex = (currentIndex + 1) % progetti.length;
+          } else {
+            currentIndex = (currentIndex - 1 + progetti.length) % progetti.length;
+          }
+      
+          renderCards(getCurrentSet());
+      
+          // Fase 4: le nuove card entrano da lato opposto (slide visivo)
+          const newCards = document.querySelectorAll(".card-progetto");
+          newCards.forEach((card, i) => {
+            card.style.opacity = "0";
+            card.style.transform = `translate(${direction === "next" ? 100 : -100}px, 20px) scale(0.9)`;
+            setTimeout(() => {
+              card.style.transition = "all 0.6s cubic-bezier(0.25, 1, 0.5, 1)";
+              card.style.opacity = "1";
+              card.style.transform = "translate(0, 0) rotate(0) scale(1)";
+            }, 100 * i);
+          });
+        }
+      
+        frecciaDx.addEventListener("click", () => shuffleAnimation("next"));
+        frecciaSx.addEventListener("click", () => shuffleAnimation("prev"));
+      });
+      </script>
+      
+      
+        
+    
+    
+  </body>
+</html>

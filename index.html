@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Il mio Portfolio - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/Immagini/favicon.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+      main {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="intestazione">
+      <div class="contenitore-header">
+        
+        <div class="box-logo">
+          <img src="assets/Immagini/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="menu">
+          <ul class="lista-menu lista-menu-home">
+            <li><a href="index.html" class="link-menu attivo">Home</a></li>
+            <li><a href="assets/pagine/progetti.html" class="link-menu">Progetti</a></li>
+            <li><a href="assets/pagine/about.html" class="link-menu">About</a></li>
+            <li><a href="assets/pagine/cv.html" class="link-menu">CV</a></li>
+            <li><a href="assets/pagine/contattami.html" class="link-menu">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <button class="hamburger" aria-label="Apri menu" style="margin-bottom: -30px;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu-mobile">
+      <div class="box-logo" style="padding: 20px;">
+        <img src="assets/Immagini/logo.png" alt="Logo" class="logo">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assets/pagine/progetti.html">Progetti</a></li>
+        <li><a href="assets/pagine/about.html">About</a></li>
+        <li><a href="assets/pagine/cv.html">CV</a></li>
+        <li><a href="assets/pagine/contattami.html">Contatti</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+    <section class="hero">
+      <div class="contenitore-hero container-fluid">
+        
+        <div class="introduzione">
+          <h2 class="sottotitolo">Ciao, sono</h2>
+          <h1 class="titolo">Antonio De Siena</h1>
+          <h3 class="ruolo">Sono uno Sviluppatore Web Front-End</h3>
+          <p class="descrizione">
+            Costruisco applicazioni web <strong>moderne</strong>, 
+            <strong>responsive</strong> e <strong>performanti</strong> con 
+            <strong>TypeScript</strong> e framework come <strong>React 19 moderno, Angular e Vue 3</strong>.  
+            Mi concentro su <strong>UX</strong>, <strong>scalabilità</strong> e 
+            <strong>best practice</strong>, trasformando idee in interfacce chiare e interattive.
+          </p>
+          
+          <a href="assets/pagine/progetti.html"><button class="bottone-scuro">Vedi i miei progetti</button></a>
+        </div>
+
+        <div class="box-foto">
+          <img src="assets/Immagini/foto.png" alt="Foto" class="foto">
+        </div>
+
+      </div>
+    </section>
+    <section class="sezione-main">
+      <div class="griglia-main">
+    
+        <!-- Chi sono -->
+        <div class="box about">
+          <h2>Chi sono</h2>
+          <p>
+            Sono <strong>Antonio De Siena</strong>, sviluppatore <strong>Front-End</strong> specializzato nella creazione di esperienze web 
+            <strong>moderne</strong>, <strong>scalabili</strong> e <strong>intuitive</strong>.
+            Per me il front-end è rendere <em>intuibile la complessità</em>: progettare componenti riutilizzabili, tipizzare la logica 
+            e disegnare flussi chiari, così che l’utente trovi la strada da solo — intuendo facilmente come muoversi nel sito e quando, unito ad un codice pulito e leggibile.
+          </p>
+          
+          <a href="assets/pagine/about.html" class="bottone-link">Scopri di più →</a>
+        </div>
+    
+        <!-- Progetti in evidenza -->
+        <div class="box progetti">
+          <h2>Progetti in evidenza</h2>
+          <div class="griglia-progetti">
+            <div class="progetto">
+              <a href="index.html"><img src="assets/Immagini/progetto1.png" alt="Portfolio"></a>
+              <p>Portfolio personale</p>
+            </div>
+            <div class="progetto">
+              <a href="https://antoniods1.github.io/html-primo-progetto/"><img src="assets/Immagini/progetto2.png" alt="Eco Hotel Pomelia"></a>
+              <p>Eco hotel Pomelia</p>
+            </div>
+            <div class="progetto">
+              <a href="https://antoniods1.github.io/html-projectwork/"><img src="assets/Immagini/progetto3.png" alt="Pagina di Download Report A2A"></a>
+              <p>Pagina di Download A2A</p>
+            </div>
+          </div>
+          <a href="assets/pagine/progetti.html" class="bottone-link">Vedi tutti i progetti →</a>
+        </div>
+    
+        <!-- CV -->
+        <div class="box cv">
+          <h2>Curriculum Vitae</h2>
+          <p>
+            Il mio percorso formativo e professionale racchiuso in un CV moderno e sintetico,
+            con focus su <strong>competenze pratiche</strong> ed <strong>esperienze reali</strong>.
+          </p>
+          <div class="anteprima-cv">
+            <a href="assets/pagine/cv.html"><img src="assets/Immagini/anteprimaCV.png" style="cursor: pointer;" alt="Anteprima Curriculum"></a>
+          </div>
+          <a href="assets/pagine/cv.html" class="bottone-link">Visualizza CV →</a>
+        </div>
+    
+        <!-- Tecnologie -->
+        <div class="box tecnologie">
+          <h2>Tecnologie che utilizzo</h2>
+          <p>
+            Lavoro con i framework e linguaggi più usati nel web moderno, bilanciando innovazione e stabilità:
+          </p>
+          <div class="griglia-tecnologie">
+            <div class="tech"><img src="assets/Immagini/tp.png" alt="TypeScript"><span>TypeScript</span></div>
+            <div class="tech"><img src="assets/Immagini/tailwind.png" alt="Tailwind"><span>Tailwind</span></div>
+            <div class="tech"><img src="assets/Immagini/react.png" alt="React"><span>React</span></div>
+            <div class="tech"><img src="assets/Immagini/redux.png" alt="Redux"><span>Redux</span></div>
+            <div class="tech"><img src="assets/Immagini/angular.png" alt="Angular"><span>Angular</span></div>
+            <div class="tech"><img src="assets/Immagini/vue.png" alt="Vue"><span>Vue 3</span></div>
+          </div>
+        </div>
+    
+        <!-- CTA -->
+        <div class="box cta">
+          <h2>Info e contatti</h2>
+          <p>
+            Se desideri avere maggiori informazioni o discutere di una possibile collaborazione, puoi contattarmi qui sotto.
+          </p>
+          <a href="assets/pagine/contattami.html" class="bottone-scuro bottone-cta-home">Contattami</a>
+        </div>
+    
+      </div>
+    </section>
+    </main>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menuMobile = document.querySelector('.menu-mobile');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('attivo');
+        menuMobile.classList.toggle('aperto');
+      });
+    </script>
+  </body>
+</html>

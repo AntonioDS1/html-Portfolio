@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Il mio Portfolio - About</title>
+    <link rel="icon" type="image/x-icon" href="../Immagini/favicon.ico">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+      main {
+        opacity: 0;
+        transform: translateY(130px);
+        animation: fadeInUp 1s ease-out forwards;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(130px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(100px);
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="intestazione">
+      <div class="contenitore-header">
+        
+        <div class="box-logo">
+          <img src="../Immagini/logo.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="menu">
+          <ul class="lista-menu">
+            <li><a href="../../index.html" class="link-menu">Home</a></li>
+            <li><a href="../pagine/progetti.html" class="link-menu">Progetti</a></li>
+            <li><a href="../pagine/about.html" class="link-menu attivo">About</a></li>
+            <li><a href="../pagine/cv.html" class="link-menu">CV</a></li>
+            <li><a href="../pagine/contattami.html" class="link-menu">Contatti</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+    <button class="hamburger" aria-label="Apri menu" style="margin-bottom: -120px;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu-mobile">
+      <div class="box-logo" style="padding: 20px;">
+        <img src="../Immagini/logo.png" alt="Logo" class="logo">
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="assets/pagine/progetti.html">Progetti</a></li>
+        <li><a href="assets/pagine/about.html">About</a></li>
+        <li><a href="assets/pagine/cv.html">CV</a></li>
+        <li><a href="assets/pagine/contattami.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <main class="about main-about">
+
+        <div class="title-container">
+          <div class="line"></div>
+          <h1><span class="black">ABOUT</span> <span class="green">ME</span></h1>
+          <div class="line"></div>
+        </div>
+    
+        <p class="subtitle">PERMETTIMI DI DIRTI QUALCOSA SU DI ME</p>
+    
+        <section class="intro">
+          <img src="../Immagini/foto.png" alt="Profile" class="profile-photo">
+          <p>
+            Fin da piccolo sono sempre stato curioso di capire <strong>come funziona un computer</strong>. 
+            Sono cresciuto in un paese non arretrato, ma neppure del tutto al passo con i tempi: 
+            a scuola non c’era nemmeno un PC. Ricordo ancora quando ci fece visita un professore di informatica: da quel momento, il computer mi sembrò qualcosa di straordinario, quasi magico. Quella scintilla è diventata presto un <strong>obiettivo di vita</strong> — capire, creare, costruire qualcosa di mio attraverso la tecnologia.
+          </p>
+        
+          <p>
+            Questa passione mi ha portato a intraprendere una <strong>laurea in Informatica</strong>, 
+            dove ho imparato le basi della logica, della programmazione e dei sistemi. 
+            Col tempo, però, ho capito che ciò che mi affascinava di più era la possibilità di 
+            <span class="highlight-text">unire creatività e codice</span>, 
+            dando vita a esperienze digitali concrete e visivamente coinvolgenti. 
+            Così ho scelto di dedicarmi allo <strong>sviluppo web front-end</strong>.
+          </p>
+        
+          <p>
+            Oggi realizzo <strong>siti web moderni, responsive e curati nei dettagli</strong>, 
+            unendo design, accessibilità e performance. 
+            Lavoro con <span class="highlight-text">HTML</span>, 
+            <span class="highlight-text">CSS</span> e 
+            <span class="highlight-text">JavaScript</span>, e continuo a crescere studiando 
+            framework e tecnologie moderne come <strong>React</strong> e <strong>Tailwind CSS</strong>, 
+            anche grazie al percorso pratico di <strong>Start2Impact</strong>.
+          </p>
+        
+          <p>
+            Amo ogni fase del processo creativo: dall’idea iniziale al design, fino alla realizzazione del codice. 
+            Credo che un buon sito non debba solo funzionare, ma anche <span class="highlight-text">far vivere un’esperienza</span>.  
+            Sono una persona curiosa, metodica e sempre pronta a imparare, perché nel web — come nella vita — 
+            non si smette mai di evolversi.
+          </p>
+        
+        </section>
+    
+        <section class="skills">
+          <div class="column social">
+            <h2>PUOI TROVARMI QUI</h2>
+            <div class="icons">
+              <a href=""><img src="../Immagini/linkedin.png" class="fab fa-linkedin"></img></a>
+              <a href=""><img src="../Immagini/github.png"  class="fab fa-github"></img></a>
+              <a href=""><img src="../Immagini/instagram.png" class="fab fa-instagram"></img></a>
+              <a href=""><img src="../Immagini/facebook.png"  class="fab fa-facebook"></img></a>
+            </div>
+          </div>
+    
+          <div class="column">
+            <h2>GUARDA COSA SO FARE</h2>
+            <ul>
+              <li><strong>Front-End Development</strong> – HTML, CSS, JavaScript</li>
+              <li><strong>Responsive Web Design</strong> – layout fluidi e mobile-first</li>
+              <li><strong>Framework Moderni</strong> – React, Tailwind CSS</li>
+              <li><strong>UI/UX Design</strong> – attenzione all’esperienza utente e ai dettagli visivi</li>
+              <li><strong>Ottimizzazione</strong> – performance, accessibilità e SEO di base</li>
+              <li><strong>Version Control</strong> – Git & GitHub</li>
+              <li><strong>Prototipazione e Branding</strong> – creazione di interfacce e identità visive</li>
+              <li><strong>Animazioni e Interattività</strong> – transizioni, caroselli e micro-interazioni</li>
+              <li><strong>CMS</strong> – WordPress (gestione e personalizzazione)</li>
+              <li><strong>Formazione continua</strong> – Start2Impact, autoapprendimento e aggiornamento costante</li>
+            </ul>
+          </div>
+          
+        </section>
+    
+      </main>
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const menuMobile = document.querySelector('.menu-mobile');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('attivo');
+        menuMobile.classList.toggle('aperto');
+      });
+    </script>
+  </body>
+</html>
