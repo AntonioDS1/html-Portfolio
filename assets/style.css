@@ -1507,6 +1507,19 @@ small {
   }
 }
 
+@media (max-width: 600px) {
+  .contenitore-laterale,
+  .contenitore-barra-destra {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    transform: translateX(-160px);
+  }
+
+  .carosello-wrapper {
+    transform: translateX(30px);
+  }
+}
+
 @media (max-width: 480px) {
   .contenitore-laterale,
   .contenitore-barra-destra {
@@ -1693,6 +1706,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
