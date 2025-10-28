@@ -1520,7 +1520,7 @@ small {
   }
 
   .cta-progetti {
-    transform: translateX(-540px);
+    transform: translateX(-520px);
   }
 }
 
@@ -1534,7 +1534,7 @@ small {
 
   
   .carosello-wrapper {
-    transform: translateX(-60px);
+    transform: translateX(-30px);
   }
 
   .cta-progetti {
@@ -1710,6 +1710,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
