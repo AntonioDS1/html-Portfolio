@@ -1507,41 +1507,7 @@ small {
   }
 }
 
-@media (max-width: 620px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-140px);
-  }
-  
-  .cta-progetti {
-    transform: translateX(-520px);
-  }
-}
-
-
-
-@media (max-width: 560px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-200px);
-  }
-
-  
-  .carosello-wrapper {
-    transform: translateX(0px);
-  }
-
-  .cta-progetti {
-    transform: translateX(-560px);
-  }
-
-}
-
-@media (max-width: 540px) {
+@media (max-width: 480px) {
   .contenitore-laterale,
   .contenitore-barra-destra {
     padding-right: 20rem;
@@ -1727,6 +1693,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
