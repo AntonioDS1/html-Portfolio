@@ -4,7 +4,7 @@
   box-sizing: border-box;
   
 }
-body {
+html, body {
   font-family: Arial, sans-serif;
   background-color: #fff;   
   color: #212529;           
@@ -1700,5 +1700,6 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
