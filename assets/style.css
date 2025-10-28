@@ -185,6 +185,10 @@ html, body {
   gap: 400px;
 }
 
+.bottone-hero {
+  margin-bottom: 40px;
+}
+
 @media (max-height: 570px) {
   .hero {height: 170vh;}
 }
@@ -1711,6 +1715,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
