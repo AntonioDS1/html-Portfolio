@@ -1409,7 +1409,7 @@ small {
   }
 
   .carosello-wrapper {
-    transform: translateX(170px);
+    transform: translateX(150px);
   }
 
   .cta-progetti {
@@ -1706,6 +1706,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
