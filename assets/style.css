@@ -125,8 +125,7 @@ html, body {
 
   /* Menu mobile laterale */
   .menu-mobile {
-    position: fixed;
-    transform: translateY(-50px);    
+    position: fixed;   
     top: 0;
     right: -260px;
     width: 240px;
@@ -1707,6 +1706,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
