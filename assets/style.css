@@ -1520,37 +1520,7 @@ small {
   }
 }
 
-@media (max-width: 600px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-160px);
-  }
 
-  .carosello-wrapper {
-    transform: translateX(30px);
-  }
-}
-
-@media (max-width: 580px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-180px);
-  }
-
-  
-  .carosello-wrapper {
-    transform: translateX(20px);
-  }
-
-  .cta-progetti {
-    transform: translateX(-540px);
-  }
-
-}
 
 @media (max-width: 560px) {
   .contenitore-laterale,
@@ -1567,6 +1537,25 @@ small {
 
   .cta-progetti {
     transform: translateX(-560px);
+  }
+
+}
+
+@media (max-width: 540px) {
+  .contenitore-laterale,
+  .contenitore-barra-destra {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    transform: translateX(-220px);
+  }
+
+  
+  .carosello-wrapper {
+    transform: translateX(-20px);
+  }
+
+  .cta-progetti {
+    transform: translateX(-580px);
   }
 
 }
@@ -1738,6 +1727,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
