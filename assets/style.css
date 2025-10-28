@@ -1518,6 +1518,10 @@ small {
   .carosello-wrapper {
     transform: translateX(30px);
   }
+
+  .cta-progetti {
+    transform: translateX(-540px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -1706,6 +1710,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
