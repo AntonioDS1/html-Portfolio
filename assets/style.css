@@ -1409,7 +1409,7 @@ small {
   }
 
   .carosello-wrapper {
-    transform: translateX(210px);
+    transform: translateX(170px);
   }
 
   .cta-progetti {
@@ -1425,9 +1425,7 @@ small {
     transform: translateX(-50px);
   }
 
-  .carosello-wrapper {
-    transform: translateX(190px);
-  }
+
 
   .cta-progetti {
     transform: translateX(-420px);
@@ -1442,9 +1440,7 @@ small {
     transform: translateX(-60px);
   }
   
-  .carosello-wrapper {
-    transform: translateX(170px);
-  }
+  
 
   .cta-progetti {
     transform: translateX(-440px);
@@ -1710,6 +1706,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
