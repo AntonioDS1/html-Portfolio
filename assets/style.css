@@ -1522,6 +1522,7 @@ small {
 
   .cta-progetti {
     transform: translateX(-580px);
+    background-color: red;
   }
 
 }
@@ -1693,6 +1694,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
