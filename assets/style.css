@@ -1533,6 +1533,44 @@ small {
   }
 }
 
+@media (max-width: 580px) {
+  .contenitore-laterale,
+  .contenitore-barra-destra {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    transform: translateX(-180px);
+  }
+
+  
+  .carosello-wrapper {
+    transform: translateX(20px);
+  }
+
+  .cta-progetti {
+    transform: translateX(-540px);
+  }
+
+}
+
+@media (max-width: 560px) {
+  .contenitore-laterale,
+  .contenitore-barra-destra {
+    padding-right: 20rem;
+    padding-left: 20rem;
+    transform: translateX(-200px);
+  }
+
+  
+  .carosello-wrapper {
+    transform: translateX(0px);
+  }
+
+  .cta-progetti {
+    transform: translateX(-560px);
+  }
+
+}
+
 /*SEZIONE ABOUT*/
 
 .main-about {
@@ -1700,6 +1738,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
