@@ -125,7 +125,9 @@ html, body {
 
   /* Menu mobile laterale */
   .menu-mobile {
-    position: fixed;   
+    position: fixed; 
+    padding-bottom: 6.25rem;
+    transform: translateY(-50px);
     top: 0;
     right: -260px;
     width: 240px;
@@ -1706,6 +1708,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
