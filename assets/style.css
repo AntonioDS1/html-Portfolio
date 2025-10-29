@@ -43,12 +43,12 @@ html, body {
   height: 60px;
   object-fit: cover;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo:hover {
   transform: scale(1.1);
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .logo:active {
@@ -1726,6 +1726,7 @@ h1 {
     transform: translateY(-100px);
   }
 }
+
 
 
 
