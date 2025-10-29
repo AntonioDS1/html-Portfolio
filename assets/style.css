@@ -418,12 +418,14 @@ button {
 
 .bottone-chiaro {
   background-color: #fff;
-  color: #212529;
-  border: 1px solid #dee2e6;
+  color: grey;
+  border: 1px solid grey;
 }
 .bottone-chiaro:hover {
-  background-color: #f8f9fa;
-  transform: translateY(-2px);
+  background-color: grey;
+  border-color: #fff;
+  color: #fff;
+  
 }
 
 @media (max-width: 992px) {
@@ -648,11 +650,12 @@ button {
   align-items: center;
   padding-top: 120px;
   padding-bottom: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .curriculum {
   display: flex;
-  width: 1300px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -1175,9 +1178,6 @@ small {
 
 /* --- BOTTONI --- */
 .bottone-chiaro {
-  background: #fff;
-  color: #fd7e14;
-  border: 1px solid #fd7e14;
   padding: 0.6rem 1.1rem;
   border-radius: 4px;
   text-decoration: none;
@@ -1185,10 +1185,6 @@ small {
   transition: all 0.3s;
 }
 
-.bottone-chiaro:hover {
-  background: #fd7e14;
-  color: #fff;
-}
 
 /* --- FRECCE --- */
 .freccia {
@@ -1418,6 +1414,9 @@ small {
 }
 
 @media (max-width: 900px) {
+
+  
+
   .contenitore-laterale,
   .contenitore-barra-destra, .cta-progetti {
     padding-right: 20rem;
@@ -1875,4 +1874,5 @@ h1 {
     gap: 2rem;
   }
 }
+
 
