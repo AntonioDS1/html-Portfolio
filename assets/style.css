@@ -418,11 +418,11 @@ button {
 
 .bottone-chiaro {
   background-color: #fff;
-  color: grey;
-  border: 1px solid grey;
+  color: black;
+  border: 1px solid black;
 }
 .bottone-chiaro:hover {
-  background-color: grey;
+  background-color: black;
   border-color: #fff;
   color: #fff;
   
@@ -1874,5 +1874,6 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
