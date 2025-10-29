@@ -1610,7 +1610,7 @@ h1 {
 }
 
 .green {
-  color: #48c774;
+  color: grey;
 }
 
 .subtitle {
@@ -1632,7 +1632,7 @@ h1 {
 }
 
 .highlight-text {
-  color: #48c774;
+  color: grey;
   font-weight: bold;
 }
 
@@ -1652,7 +1652,7 @@ h1 {
 .column h2 {
   color: #333;
   font-size: 1.3rem;
-  border-bottom: 2px solid #48c774;
+  border-bottom: 2px solid gray;
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
@@ -1862,4 +1862,5 @@ h1 {
     gap: 2rem;
   }
 }
+
 
