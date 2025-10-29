@@ -953,6 +953,11 @@ small {
 }
 
 /* --- LAYOUT SEZIONE PROGETTI --- */
+
+.corpo-progetti {
+  background-color: #f3f7fc;
+}
+
 .sezione-progetti {
   display: grid;
   grid-template-columns: 260px 1fr 260px;
@@ -1073,22 +1078,22 @@ small {
 .contenitore-titolo-progetti {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 30px;
+  transform: translateX(-30px);
 }
 
 .titolo-linea {
   border: 1px solid black;
-  height: 2px;
+  background-color: black;
+  height: 3.5px;
   width: 24rem;
   color: rgba(255, 0, 0, 0);
 }
 
-.contenitore-titolo-progetti {
-  margin-bottom: 30px;
-}
 
 .titolo-progetti {
-  font-family: 'Lobster', cursive; /* Font simile all'immagine */
+  font-family: 'Arial';
   font-size: 3rem;
   color: #212529;
   text-align: center;
@@ -1101,7 +1106,7 @@ small {
   max-width: 900px;
   height: 1px;
   border: none;
-  background-color: #d9d9d9;
+  background-color: black;
   margin: 0 auto 2.5rem auto;
 }
 
@@ -1113,6 +1118,8 @@ small {
   justify-content: center;
   gap: 1rem;
   padding-bottom: 5rem;
+  width: 170%;
+  transform: translateX(-370px);
 }
 
 /* --- CAROSELLO --- */
@@ -1124,6 +1131,7 @@ small {
   justify-content: flex-start;
   width: 70%;
   animation: scroll 20s linear infinite;
+  z-index: 1000;
 }
 
 @keyframes trasforma {
@@ -1235,11 +1243,12 @@ small {
   border-color: grey;
   width: 200px;
   border-radius: 12px;
+  transform: translateX(-30px);
 }
 
 .bottone-cta:hover {
   background-color: #DCDCDC;
-  border: none;
+  border-color: #f3f7fc;
 }
 
 /* --- BARRA DESTRA --- */
@@ -1295,7 +1304,12 @@ small {
 /* --- RESPONSIVE --- */
 
 /* TABLET (≤992px) */
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
+
+  aside {
+    display: none;
+  }
+
   .sezione-progetti {
     grid-template-columns: 1fr; /* una colonna */
     grid-template-rows: auto auto auto; /* sinistra - centro - destra */
@@ -1352,7 +1366,11 @@ small {
   }
 
   .titolo-linea {
-    display: none; /* elimina le linee laterali per più spazio */
+    width: 20%;
+  }
+
+  .contenitore-titolo-progetti {
+    transform: translateX(10px);
   }
 
   .carosello-wrapper {
@@ -1409,6 +1427,7 @@ small {
 
   .carosello-wrapper {
     transform: translateX(230px);
+    width: 400px;
   }
 
   .cta-progetti {
@@ -1432,8 +1451,9 @@ small {
   }
 
   .cta-progetti {
-    transform: translateX(-400px);
+    transform: translateX(-180px);
   }
+
 }
 
 @media (max-width: 720px) {
@@ -1446,9 +1466,7 @@ small {
 
 
 
-  .cta-progetti {
-    transform: translateX(-420px);
-  }
+
 }
 
 @media (max-width: 700px) {
@@ -1461,9 +1479,7 @@ small {
   
   
 
-  .cta-progetti {
-    transform: translateX(-440px);
-  }
+
 }
 
 @media (max-width: 680px) {
@@ -1478,9 +1494,7 @@ small {
     transform: translateX(130px);
   }
 
-  .cta-progetti {
-    transform: translateX(-460px);
-  }
+
 }
 
 @media (max-width: 660px) {
@@ -1495,9 +1509,7 @@ small {
     transform: translateX(90px);
   }
 
-  .cta-progetti {
-    transform: translateX(-480px);
-  }
+
 }
 
 @media (max-width: 640px) {
@@ -1510,12 +1522,10 @@ small {
 
   
   .carosello-wrapper {
-    transform: translateX(30px);
+    transform: translateX(15px);
   }
 
-  .cta-progetti {
-    transform: translateX(-500px);
-  }
+
 
   .box-foto {
     transform: translateY(70px);
@@ -1531,12 +1541,10 @@ small {
   }
 
   .carosello-wrapper {
-    transform: translateX(30px);
+    transform: translateX(15px);
   }
 
-  .cta-progetti {
-    transform: translateX(-520px);
-  }
+  
 }
 
 @media (max-width: 480px) {
@@ -1549,12 +1557,10 @@ small {
 
   
   .carosello-wrapper {
-    transform: translateX(-30px);
+    transform: translateX(-15px);
   }
 
-  .cta-progetti {
-    transform: translateX(-580px);
-  }
+  
 
 }
 
@@ -1863,6 +1869,3 @@ h1 {
     gap: 2rem;
   }
 }
-
-
-
