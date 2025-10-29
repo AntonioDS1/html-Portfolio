@@ -1731,6 +1731,7 @@ h1 {
   background-color: #212529;
   color: white;
   padding: 3rem 2rem 1rem;
+  margin-top: 1.5rem;
 }
 
 .contenitore-piédipagina {
@@ -1862,5 +1863,6 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
