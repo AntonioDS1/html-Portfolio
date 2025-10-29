@@ -32,7 +32,7 @@
 
     </style>
   </head>
-  <body>
+  <body class="corpo-progetti">
     <header class="intestazione">
       <div class="contenitore-header">
         
@@ -52,10 +52,29 @@
 
       </div>
     </header>
+
+    <button class="hamburger" aria-label="Apri menu" style="margin-bottom: -30px;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu-mobile">
+      <div class="box-logo" style="padding: 20px;">
+        <img src="../Immagini/logo.png" alt="Logo" class="logo">
+      </div>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../pagine/progetti.html">Progetti</a></li>
+        <li><a href="../pagine/about.html">About</a></li>
+        <li><a href="../pagine/cv.html">CV</a></li>
+        <li><a href="../pagine/contattami.html">Contatti</a></li>
+      </ul>
+    </nav>
     
     <main class="sezione-progetti">
       <!-- BARRA SINISTRA -->
-      <aside class="barra-sinistra">
+      <aside class="barra-sinistra" style="opacity: 0;">
         <div class="contenitore-laterale">
           <div class="profilo-laterale">
             <img src="../Immagini/foto.png" alt="Profilo" class="foto-laterale">
@@ -96,17 +115,7 @@
         </div>
       </section>
 
-      <!-- BARRA DESTRA -->
-      <aside class="barra-destra">
-        <div class="contenitore-barra-destra">
-          <h3>Ultimi aggiornamenti</h3>
-          <ul>
-            <li>Portfolio v2 in lavorazione</li>
-            <li>Nuove animazioni JS</li>
-            <li>Studio di React e GSAP</li>
-          </ul>
-        </div>  
-      </aside>
+
     </main>
 
       <footer class="piédipagina">
@@ -168,8 +177,14 @@
     </footer>
     
     <script>
-      
-        document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector('.hamburger');
+      const menuMobile = document.querySelector('.menu-mobile');
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('attivo');
+        menuMobile.classList.toggle('aperto');
+      });
+      document.addEventListener("DOMContentLoaded", () => {
           const toggleBtn = document.querySelector(".toggle-menu");
           const menu = document.querySelector(".menu-laterale");
 
@@ -186,7 +201,7 @@
       
         const progetti = [
           { titolo: "Progetto introduzione", descrizione: "Pagina Eco-Hotel Pomelia", img: "../Immagini/progetto2.png", link: "https://antoniods1.github.io/html-primo-progetto/" },
-          { titolo: "Portfolio personale", descrizione: "Progetto con più pagine: Home, About, CV, Progetti e Contatti", img: "../Immagini/progetto1.png", link: "../../index.html" },
+          { titolo: "Portfolio personale", descrizione: "Progetto con più pagine: Home, About, CV, Progetti e Contatti", img: "../Immagini/anteprimaOG-Home.png", link: "../../index.html" },
           { titolo: "Pagina Download Report A2A", descrizione: "Progetto di un altro corso, pagina con pulsanti di download funzionanti", img: "../Immagini/progetto3.png", link: "https://antoniods1.github.io/html-projectwork/" },
           { titolo: "To-do List", descrizione: "Lista di cose da fare interattiva per esercitarsi con la manipolazione del DOM.", img: "../Immagini/to-do list.png", link: "" },
           { titolo: "Counter JavaScript", descrizione: "Progetto realizzato interamente in JavaScript; counter con elementi caricati dinamicamente", img: "../Immagini/counter.png", link: "" },
@@ -286,4 +301,3 @@
   </body>
 
 </html>
-
