@@ -1306,7 +1306,7 @@ small {
 /* TABLET (≤992px) */
 @media (max-width: 1400px) {
 
-  aside {
+  .barra-sinistra {
     display: none;
   }
 
@@ -1439,6 +1439,12 @@ small {
 }
 
 @media (max-width: 740px) {
+
+  .s-curriculum {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   .contenitore-laterale,
   .contenitore-barra-destra {
     padding-right: 20rem;
@@ -1869,3 +1875,4 @@ h1 {
     gap: 2rem;
   }
 }
+
