@@ -48,7 +48,7 @@ html, body {
 
 .logo:hover {
   transform: scale(1.1);
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 .logo:active {
@@ -197,7 +197,7 @@ html, body {
 }
 
 .bottone-hero {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 @media (max-height: 570px) {
@@ -370,6 +370,11 @@ html, body {
 
 .bottone-cta-home {
   width: 130px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bottone-cta-home:hover {
+  opacity: 0.8;
 }
 
 .bottone {
@@ -409,15 +414,6 @@ button {
   transition: background 0.3s, transform 0.2s;
 }
 
-
-.bottone-scuro {
-  background-color: #212529;
-  color: #fff;
-}
-.bottone-scuro:hover {
-  background-color: #000;
-  transform: translateY(-2px);
-}
 
 
 .bottone-chiaro {
@@ -467,7 +463,7 @@ button {
   left: 0;
   width: 50%;
   height: 2px;
-  background: linear-gradient(90deg, #fd7e14, transparent);
+  background: linear-gradient(90deg, #111111, transparent);
   opacity: 0.3;
 }
 
@@ -489,17 +485,19 @@ button {
 .bottone-link {
   display: inline-block;
   text-decoration: none;
-  color: #fd7e14;
   font-weight: 500;
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 .bottone-link:hover {
-  border-color: #fd7e14;
+  border-color: #808080;
   padding-left: 0.3rem;
 }
 
+.bottone-link-home {
+  color: #808080;
+}
 
 .bottone-scuro {
   display: inline-block;
@@ -509,11 +507,12 @@ button {
   font-weight: 500;
   padding: 0.8rem 1.6rem;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .bottone-scuro:hover {
-  background-color: #fd7e14;
+  opacity: 0.8;
+  transform: translateY(-3px);
 }
 
 
@@ -1727,26 +1726,139 @@ h1 {
   }
 }
 
+/* Piédipagina */
+.piédipagina {
+  background-color: #212529;
+  color: white;
+  padding: 3rem 2rem 1rem;
+}
 
+.contenitore-piédipagina {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 2rem;
+}
 
+.logo-social-piédipagina {
+  flex: 1 1 200px;
+  margin-bottom: 2rem;
+}
 
+.logo-piédipagina {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
 
+.icone-social {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
 
+.piédipaginaPrimaColonna {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 30px;
+}
 
+.colonna-piédipagina {
+  flex: 1 1 200px;
+  margin-bottom: 2rem;
+}
 
+.colonna-piédipagina h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
 
+.colonna-piédipagina ul {
+  list-style: none;
+  padding: 0;
+}
 
+.colonna-piédipagina ul li {
+  margin-bottom: 0.5rem;
+}
 
+.colonna-piédipagina ul li a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, text-decoration 0.9s ease;
+}
 
+.colonna-piédipagina ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
 
+.fondo-piédipagina {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
 
+.fondo-piédipagina a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
 
+.fondo-piédipagina a:hover {
+  text-decoration: underline;
+}
 
+.connettiamo {
+  padding-top:15px;
+  padding-bottom:60px;
+}
 
+.icone-social a {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
 
+.icone-social a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+}
 
+.icone-social a:hover {
+  transform: scale(1.15);
+}
 
+/* Media Query Footer */
+@media (max-width: 1102px) {
+  .colonna-piédipagina {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+    padding-right: 600px;
+    font-size: 150%;
+  }
+}
 
+@media (max-width: 798px) {
+  .connettiamo {
+    width: 35%;
+  }
+}
 
-
-
+@media (max-width: 768px) {
+  .contenitore-piédipagina {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
