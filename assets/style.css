@@ -1349,7 +1349,6 @@ small {
 }
 
 
-/* MOBILE (≤576px) */
 @media (max-width: 1100px) {
 
   .contenitore-laterale {
@@ -1365,16 +1364,22 @@ small {
     width: 20%;
   }
 
-  .contenitore-titolo-progetti {
-    transform: translateX(10px);
-  }
-
   .carosello-wrapper {
     flex-direction: column;
     align-items: center;
     padding-bottom: 3rem;
-    width: 50%;
+    width: 500px;
     transform: translateX(250px);
+    margin-right: 16rem;
+    padding-right: 10rem;
+    margin-left: calc(50vw - 480px);
+  }
+
+  .contenitore-titolo-progetti {
+    display: flex;
+    width: 100vw;
+    transform: translateX(-40px);
+    justify-content: center;
   }
 
   .carosello-progetti {
@@ -1405,172 +1410,17 @@ small {
 
   .cta-progetti {
     margin-top: 1.5rem;
+    margin-left: calc(50vw - 150px);
+    transform: translateX(-80px);
   }
   
   .card-progetto {
-    flex: 0 0 100%; /* Mostra solo una card per volta */
+    flex: 0 0 100%;
   }
   
 }
 
-@media (max-width: 900px) {
 
-  
-
-  .contenitore-laterale,
-  .contenitore-barra-destra, .cta-progetti {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-30px);
-  }
-
-  .carosello-wrapper {
-    transform: translateX(230px);
-    width: 400px;
-  }
-
-  .cta-progetti {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    width: 200%;
-    transform: translateX(-380px);
-  }
-}
-
-@media (max-width: 740px) {
-
-  .s-curriculum {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-40px);
-  }
-
-  .carosello-wrapper {
-    transform: translateX(150px);
-  }
-
-  .cta-progetti {
-    transform: translateX(-180px);
-  }
-
-}
-
-@media (max-width: 720px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-50px);
-  }
-
-
-
-
-}
-
-@media (max-width: 700px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-60px);
-  }
-  
-  
-
-
-}
-
-@media (max-width: 680px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-80px);
-  }
-
-  .carosello-wrapper {
-    transform: translateX(130px);
-  }
-
-
-}
-
-@media (max-width: 660px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-100px);
-  }
-
-  .carosello-wrapper {
-    transform: translateX(90px);
-  }
-
-
-}
-
-@media (max-width: 640px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-120px);
-  }
-
-  
-  .carosello-wrapper {
-    transform: translateX(15px);
-  }
-
-
-
-  .box-foto {
-    transform: translateY(70px);
-  }
-}
-
-@media (max-width: 600px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-160px);
-  }
-
-  .carosello-wrapper {
-    transform: translateX(15px);
-  }
-
-  
-}
-
-@media (max-width: 480px) {
-  .contenitore-laterale,
-  .contenitore-barra-destra {
-    padding-right: 20rem;
-    padding-left: 20rem;
-    transform: translateX(-220px);
-  }
-
-  
-  .carosello-wrapper {
-    transform: translateX(-40px);
-  }
-
-  
-  .cta-progetti {
-    transform: translateX(-220px);
-  }  
-
-}
 
 /*SEZIONE ABOUT*/
 
@@ -1877,6 +1727,7 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
 
