@@ -266,12 +266,12 @@
             card.innerHTML = `
               <div class="contenitore-tutta-carta">
                 <div class="contenitore-carta">
-                  <a href="${p.linkGithub}" target="_blank"><img class="immagine-carta" src="${p.img}" alt="${p.titolo}"></a>
+                  <a href="${p.link}" target="_blank"><img class="immagine-carta" src="${p.img}" alt="${p.titolo}"></a>
                   <h3>${p.titolo}</h3>
                   <p>${p.descrizione}</p>
                 </div>
                 <div class="contenitore-bottone-carta">
-                  <a href="${p.link}" class="bottone-chiaro bottone-della-card" target="_blank">Vedi su GitHub</a>
+                  <a href="${p.linkGithub}" class="bottone-chiaro bottone-della-card" target="_blank">Vedi su GitHub</a>
                 </div>
               </div>`;
             carosello.appendChild(card);
@@ -337,5 +337,6 @@
   </body>
 
 </html>
+
 
 
