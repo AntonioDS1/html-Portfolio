@@ -1562,10 +1562,13 @@ small {
 
   
   .carosello-wrapper {
-    transform: translateX(-15px);
+    transform: translateX(-30px);
   }
 
   
+  .cta-progetti {
+    transform: translateX(-220px);
+  }  
 
 }
 
@@ -1874,6 +1877,7 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
 
