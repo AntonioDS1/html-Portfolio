@@ -1420,6 +1420,9 @@ small {
   
 }
 
+.immagine-carta:hover {
+  cursor: pointer;
+}
 
 
 /*SEZIONE ABOUT*/
@@ -1727,6 +1730,7 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
 
