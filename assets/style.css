@@ -1562,7 +1562,7 @@ small {
 
   
   .carosello-wrapper {
-    transform: translateX(-30px);
+    transform: translateX(-40px);
   }
 
   
@@ -1877,6 +1877,7 @@ h1 {
     gap: 2rem;
   }
 }
+
 
 
 
