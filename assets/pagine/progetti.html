@@ -200,13 +200,49 @@
         const frecciaSx = document.querySelector(".freccia-sx");
       
         const progetti = [
-          { titolo: "Progetto introduzione", descrizione: "Pagina Eco-Hotel Pomelia", img: "../Immagini/progetto2.png", link: "https://antoniods1.github.io/html-primo-progetto/" },
-          { titolo: "Portfolio personale", descrizione: "Progetto con più pagine: Home, About, CV, Progetti e Contatti", img: "../Immagini/anteprimaOG-Home.png", link: "../../index.html" },
-          { titolo: "Pagina Download Report A2A", descrizione: "Progetto di un altro corso, pagina con pulsanti di download funzionanti", img: "../Immagini/progetto3.png", link: "https://antoniods1.github.io/html-projectwork/" },
-          { titolo: "To-do List", descrizione: "Lista di cose da fare interattiva per esercitarsi con la manipolazione del DOM.", img: "../Immagini/to-do list.png", link: "" },
-          { titolo: "Counter JavaScript", descrizione: "Progetto realizzato interamente in JavaScript; counter con elementi caricati dinamicamente", img: "../Immagini/counter.png", link: "" },
-          { titolo: "Orologio in Javascript", descrizione: "Orologio funzionante in tempo reale", img: "../Immagini/orologioJS.png", link: "" }
-        ];
+            { 
+              titolo: "Progetto introduzione", 
+              descrizione: "Pagina Eco-Hotel Pomelia", 
+              img: "../Immagini/progetto2.png", 
+              link: "https://antoniods1.github.io/html-primo-progetto/", 
+              linkGithub: "https://github.com/AntonioDS1/html-primo-progetto"
+            },
+            { 
+              titolo: "Portfolio personale", 
+              descrizione: "Progetto con più pagine: Home, About, CV, Progetti e Contatti", 
+              img: "../Immagini/anteprimaOG-Home.png", 
+              link: "https://antoniods1.github.io/html-Portfolio/",
+              linkGithub: "https://github.com/AntonioDS1/html-Portfolio" 
+            },
+            { 
+              titolo: "Pagina Download Report A2A", 
+              descrizione: "Progetto di un altro corso, pagina con pulsanti di download funzionanti", 
+              img: "../Immagini/progetto3.png", 
+              link: "https://antoniods1.github.io/html-projectwork/",
+              linkGithub: "https://github.com/AntonioDS1/html-projectwork"
+            },
+            { 
+              titolo: "To-do List", 
+              descrizione: "Lista di cose da fare interattiva per esercitarsi con la manipolazione del DOM.", 
+              img: "../Immagini/to-do list.png", 
+              link: "https://antoniods1.github.io/html-to-do-list/",
+              linkGithub: "https://github.com/AntonioDS1/html-to-do-list"
+            },
+            { 
+              titolo: "Counter JavaScript", 
+              descrizione: "Progetto realizzato interamente in JavaScript; counter con elementi caricati dinamicamente", 
+              img: "../Immagini/counter.png", 
+              link: "",
+              linkGithub: ""
+            },
+            { 
+              titolo: "Orologio in Javascript", 
+              descrizione: "Orologio funzionante in tempo reale", 
+              img: "../Immagini/orologioJS.png", 
+              link: "",
+              linkGithub: ""
+            }
+          ];
       
         let currentIndex = 0;
         const cardsPerView = 3;
@@ -230,12 +266,12 @@
             card.innerHTML = `
               <div class="contenitore-tutta-carta">
                 <div class="contenitore-carta">
-                  <img src="${p.img}" alt="${p.titolo}">
+                  <a href="${p.linkGithub}" target="_blank"><img class="immagine-carta" src="${p.img}" alt="${p.titolo}"></a>
                   <h3>${p.titolo}</h3>
                   <p>${p.descrizione}</p>
                 </div>
                 <div class="contenitore-bottone-carta">
-                  <a href="${p.link}" class="bottone-chiaro bottone-della-card" target="_blank">View on GitHub</a>
+                  <a href="${p.link}" class="bottone-chiaro bottone-della-card" target="_blank">Vedi su GitHub</a>
                 </div>
               </div>`;
             carosello.appendChild(card);
@@ -301,4 +337,5 @@
   </body>
 
 </html>
+
 
