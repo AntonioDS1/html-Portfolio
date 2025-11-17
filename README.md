@@ -61,19 +61,33 @@ Caratteristiche principali:
 Struttura del progetto:
 
 html-Portfolio/
+
 │
+
 ├── index.html
+
 ├── assets/
+
 │ ├── style.css
+
 │ ├── Immagini/
+
 │ ├── pagine/
+
 │ │ ├── about.html
+
 │ │ ├── progetti.html
+
 │ │ ├── cv.html
+
 │ │ └── contattami.html
+
 │ └── script/ (eventuali JS)
+
 │
+
 └── README.md
+
 
 yaml
 Copia codice
