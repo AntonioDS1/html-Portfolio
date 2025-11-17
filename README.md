@@ -1,9 +1,178 @@
-Questo progetto è il mio portfolio personale, uno spazio che ho creato per presentare chi sono come sviluppatore front-end, cosa sto imparando e come applico le competenze che sto costruendo. Ho sviluppato tutte le sezioni del sito partendo dalle basi del web, utilizzando solo HTML, CSS e JavaScript: volevo capire a fondo come ogni elemento prende vita in una pagina, senza l’aiuto di framework o automatismi.
+<a id="readme-top"></a>
 
-Il portfolio è composto da più pagine, ciascuna con un ruolo preciso. La Home introduce la mia identità professionale in modo diretto e accessibile sin dal primo sguardo. La pagina dei Progetti mostra ciò che ho realizzato finora, e include un carosello interattivo in JavaScript che rappresenta uno dei primi esercizi concreti di manipolazione del DOM e animazioni personalizzate. La sezione About racconta la mia storia dal punto di vista umano e professionale, mentre il CV è stato adattato per essere consultabile facilmente anche online, mantenendo un’impostazione pulita e leggibile. Infine, la pagina dedicata ai Contatti contiene un modulo pienamente funzionante grazie all’integrazione con Formspree, così da permettere a chiunque di scrivermi direttamente dal sito.
+<!-- PROJECT SHIELDS -->
+![Stars](https://img.shields.io/github/stars/AntonioDS1/html-Portfolio?style=for-the-badge)
+![Forks](https://img.shields.io/github/forks/AntonioDS1/html-Portfolio?style=for-the-badge)
+![Issues](https://img.shields.io/github/issues/AntonioDS1/html-Portfolio?style=for-the-badge)
 
-Il progetto è ospitato su GitHub e pubblicato tramite GitHub Pages al link https://antoniods1.github.io/html-portfolio/, in modo che sia accessibile facilmente e che il codice rimanga sempre versionato e aggiornabile nel tempo. Anche se rappresenta un traguardo importante nel mio percorso di apprendimento, considero questo portfolio soprattutto un punto di partenza: una base solida che continuerò a costruire aggiungendo nuovi progetti, migliorando le animazioni e l’accessibilità, e introducendo tecnologie moderne come React e TypeScript quando sarò pronto ad applicarle in modo consapevole.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://antoniods1.github.io/html-Portfolio/index.html">
+    <img src="assets/Immagini/logo.png" alt="Logo" width="120">
+  </a>
 
-Sono felicissimo di condividere questo percorso. Se ti va di darmi un parere o semplicemente di fare due chiacchiere, puoi contattarmi all’indirizzo: desienagaetano646@gmail.com
-.
-Grazie per aver visitato il mio portfolio: è un primo passo nel mondo dello sviluppo web, e sono determinato a farne molti altri. 
+  <h3 align="center">Portfolio — Antonio De Siena</h3>
+
+  <p align="center">
+    Sito portfolio multi-pagina realizzato da zero in HTML, CSS e JavaScript, con layout responsive, caroselli dinamici e animazioni.
+    <br />
+    <a href="https://antoniods1.github.io/html-Portfolio/index.html"><strong>Visita la demo »</strong></a>
+    <br /><br />
+    <a href="https://github.com/AntonioDS1/html-Portfolio/issues">Segnala Bug</a>
+    ·
+    <a href="https://github.com/AntonioDS1/html-Portfolio/issues">Richiedi Funzionalità</a>
+  </p>
+</div>
+
+---
+
+## 📌 About the Project
+
+![Screenshot](assets/Immagini/anteprimaOG-Home.png)
+
+Questo progetto è il mio portfolio personale, costruito come un vero sito professionale e strutturato in più pagine.  
+L’obiettivo è presentare:
+
+- competenze reali da front-end developer  
+- progetti completati  
+- stile visivo coerente  
+- codice pulito e mantenibile  
+- UX chiara, con focus su navigazione e leggibilità  
+
+Caratteristiche principali:
+
+✔️ 5 pagine complete: **Home, Progetti, About, CV, Contatti**  
+✔️ **Layout responsive** (desktop → tablet → mobile)  
+✔️ **Navbar dinamica + menu hamburger mobile**  
+✔️ **Carosello progetti** con animazione shuffle personalizzata  
+✔️ **Hero section animata** con transizioni CSS  
+✔️ **Sidebar laterale** nella pagina “Progetti”  
+✔️ **Meta-tag OG completi** in ogni pagina  
+✔️ **Form di contatto funzionante** tramite Formspree  
+✔️ Codice ottimizzato e strutturato  
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## 🧩 Code Structure
+
+Struttura del progetto:
+
+html-Portfolio/
+│
+├── index.html
+├── assets/
+│ ├── style.css
+│ ├── Immagini/
+│ ├── pagine/
+│ │ ├── about.html
+│ │ ├── progetti.html
+│ │ ├── cv.html
+│ │ └── contattami.html
+│ └── script/ (eventuali JS)
+│
+└── README.md
+
+yaml
+Copia codice
+
+Tecniche principali:
+
+- CSS Grid, Flexbox, media queries
+- Animazioni CSS (fade, slide, transform)
+- JavaScript DOM (toggle menu, carosello, animazioni)
+- HTML semantico
+- Immagini ottimizzate
+- Organizzazione pulita del codice
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## 🛠️ Built With
+
+- HTML5
+- CSS3 (responsive design, animazioni)
+- JavaScript
+- Bootstrap 5.3.8
+- GitHub Pages
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## 🚀 Getting Started
+
+Clona il repository:
+
+git clone https://github.com/AntonioDS1/html-Portfolio.git
+
+yaml
+Copia codice
+
+Apri la homepage:
+
+index.html
+
+yaml
+Copia codice
+
+Nessuna dipendenza da installare.
+
+### Online Demo
+
+👉 https://antoniods1.github.io/html-Portfolio/index.html
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## 📄 Pages Overview
+
+### 🏠 Home  
+Hero, foto profilo, presentazione rapida, progetti in evidenza.
+
+### 📚 Progetti  
+Carosello dinamico animato, sidebar, preview cliccabili, pulsanti GitHub.
+
+### 👤 About  
+Storia personale, percorso, competenze, foto e branding.
+
+### 📄 CV  
+Layout professionale in due colonne, competenze, esperienze, certificazioni.
+
+### ✉️ Contatti  
+Form funzionante, verifica anti-spam, informazioni personali.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## 📬 Contact
+
+**Antonio De Siena**  
+GitHub: https://github.com/AntonioDS1  
+Portfolio: https://antoniods1.github.io/html-Portfolio/index.html  
+LinkedIn: https://www.linkedin.com/in/antonio-de-siena-2a5b752b6  
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## ⭐ Contributing
+
+Puoi segnalare bug, suggerimenti e nuove feature tramite una *Issue*.
+
+---
+
+## 📝 License
+
+Distribuito sotto licenza **MIT**.
+
+---
+
+<p align="center">
+  Grazie per aver visitato il mio portfolio!
+</p>
